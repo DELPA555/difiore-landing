@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Di Fiore Gestión — Software para talleres mecánicos</title>
+<meta name="description" content="Sistema integral de gestión para talleres mecánicos: clientes, vehículos, turnos, presupuestos, stock, facturación y WhatsApp, en un solo programa.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --blue:#0053AC; --blue-br:#1173E6; --blue-lt:#4D9BF0;
+    --black:#0A0B0D; --black2:#15181C; --black3:#1E2228;
+    --text:#111318; --muted:#5F656E; --gray-dark:#9BA1AA;
+    --bg:#F2F3F5; --card:#FFFFFF; --border:#E2E4E8;
+  }
+  body{margin:0;font-family:'Barlow',sans-serif;color:var(--text);background:#fff;}
+  h1,h2,h3,.cond{font-family:'Barlow Condensed',sans-serif;}
+  a{text-decoration:none;color:inherit;}
+  .container{max-width:1180px;margin:0 auto;padding:0 40px;}
+  .btn-primary{background:var(--blue-br);color:#fff;padding:16px 30px;border-radius:4px;font-weight:600;font-size:17px;display:inline-block;}
+  .btn-primary:hover{background:var(--blue);}
+  .btn-outline{border:1.5px solid rgba(255,255,255,0.5);color:#fff;padding:15px 30px;border-radius:4px;font-weight:600;font-size:17px;display:inline-block;}
+  .btn-outline:hover{border-color:#fff;}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:32px;}
+  .navlink{color:#C3C9D1;font-size:16px;font-weight:500;}
+  .navlink:hover{color:#fff;}
+
+</style>
+</head>
+<body>
+
+
+<div style="width:100%; background:#fff; box-sizing:border-box;">
+
+  <!-- ============ NAV ============ -->
+  <div style="position:sticky; top:0; z-index:50; width:100%; background:var(--black); box-sizing:border-box;">
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; height:78px;">
+      <img src="assets/logo.png" alt="Di Fiore Performance" style="height:36px; width:auto;">
+      <div style="display:flex; align-items:center; gap:36px;">
+        <a class="navlink" href="#problema">El problema</a>
+        <a class="navlink" href="#modulos">Módulos</a>
+        <a class="navlink" href="#capturas">Capturas</a>
+        <a class="navlink" href="#precio">Precio</a>
+        <a class="navlink" href="#faq">Preguntas</a>
+        <a class="btn-primary" style="padding:11px 22px; font-size:15px;" href="https://github.com/DELPA555/difiore-releases/releases/download/v0.1.6/DiFiore-Gestion-Setup.exe">Descargar demo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <div style="width:100%; background:var(--black); box-sizing:border-box; position:relative; overflow:hidden;">
+    <svg style="position:absolute; right:-160px; top:-140px;" width="620" height="620" viewBox="0 0 620 620" fill="none">
+      <circle cx="310" cy="310" r="309" stroke="#1173E6" stroke-opacity="0.16"/>
+    </svg>
+    <svg style="position:absolute; right:-40px; top:60px;" width="420" height="420" viewBox="0 0 420 420" fill="none">
+      <circle cx="210" cy="210" r="209" stroke="#1173E6" stroke-opacity="0.12"/>
+    </svg>
+    <div class="container" style="position:relative; padding:110px 40px 130px; display:flex; flex-direction:column; gap:34px; max-width:820px;">
+      <p style="color:var(--blue-lt); font-size:16px; font-weight:700; letter-spacing:3px; text-transform:uppercase; margin:0;">Software de gestión para talleres mecánicos</p>
+      <h1 style="color:#fff; font-size:76px; font-weight:700; line-height:1.02; margin:0; text-transform:uppercase;">El taller ordenado <span style="color:var(--blue-lt);">trabaja mejor</span></h1>
+      <p style="color:#C3C9D1; font-size:21px; line-height:1.5; margin:0; max-width:640px;">Clientes, vehículos, turnos, presupuestos, stock, facturación y WhatsApp — todo conectado en un solo sistema, hecho por mecánicos para mecánicos.</p>
+      <div style="display:flex; gap:18px; margin-top:12px; flex-wrap:wrap;">
+        <a class="btn-primary" href="https://github.com/DELPA555/difiore-releases/releases/download/v0.1.6/DiFiore-Gestion-Setup.exe">Descargar demo gratis</a>
+        <a class="btn-outline" href="#precio">Ver precio</a>
+      </div>
+      <p style="color:#8B909A; font-size:14px; margin:6px 0 0;">Sin tarjeta de crédito. Instalador para Windows, 109 MB.</p>
+    </div>
+  </div>
+
+  <!-- ============ RESPALDO BAR ============ -->
+  <div style="width:100%; background:var(--black2); box-sizing:border-box; border-top:1px solid var(--black3); border-bottom:1px solid var(--black3);">
+    <div class="container" style="padding:22px 40px; display:flex; align-items:center; gap:14px;">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4D9BF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 20 6.5v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9v-5z"/><path d="m9 12 2 2 4-4"/></svg>
+      <p style="color:#C3C9D1; font-size:16px; margin:0;">Desarrollado junto a <b style="color:#fff;">Di Fiore Performance</b>, taller de mecánica reconocido por su calidad de trabajo.</p>
+    </div>
+  </div>
+
+  <!-- ============ PROBLEMA ============ -->
+  <div id="problema" style="width:100%; background:var(--bg); box-sizing:border-box;">
+    <div class="container" style="padding:100px 40px;">
+      <p style="color:var(--blue-br); font-size:15px; font-weight:700; letter-spacing:3px; text-transform:uppercase; margin:0 0 14px;">El problema</p>
+      <h2 style="font-size:44px; font-weight:700; margin:0 0 50px; max-width:680px; line-height:1.15;">Todos los talleres viven el mismo caos administrativo</h2>
+      <div style="display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:22px;">
+        <div class="card" style="display:flex; flex-direction:column; gap:16px;">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 2.7 17a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
+          <h3 style="font-size:21px; font-weight:600; margin:0;">Todo en papel</h3>
+          <p style="font-size:15.5px; color:var(--muted); line-height:1.45; margin:0;">Presupuestos y turnos dispersos en cuadernos, Excel y WhatsApp.</p>
+        </div>
+        <div class="card" style="display:flex; flex-direction:column; gap:16px;">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          <h3 style="font-size:21px; font-weight:600; margin:0;">Turnos que se pisan</h3>
+          <p style="font-size:15.5px; color:var(--muted); line-height:1.45; margin:0;">Sin agenda centralizada se duplican turnos y se pierden clientes.</p>
+        </div>
+        <div class="card" style="display:flex; flex-direction:column; gap:16px;">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7.5" ry="3"/><path d="M4.5 6v6c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3V6"/><path d="M4.5 12v6c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3v-6"/></svg>
+          <h3 style="font-size:21px; font-weight:600; margin:0;">Stock a ciegas</h3>
+          <p style="font-size:15.5px; color:var(--muted); line-height:1.45; margin:0;">Nadie sabe qué repuesto falta hasta plena reparación.</p>
+        </div>
+        <div class="card" style="display:flex; flex-direction:column; gap:16px;">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v11H9l-4 3.5v-3.5H4z"/></svg>
+          <h3 style="font-size:21px; font-weight:600; margin:0;">Cliente sin noticias</h3>
+          <p style="font-size:15.5px; color:var(--muted); line-height:1.45; margin:0;">Llama a preguntar por su auto porque nadie le avisó el estado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ SOLUCION STATEMENT ============ -->
+  <div style="width:100%; background:var(--black); box-sizing:border-box;">
+    <div class="container" style="padding:110px 40px; text-align:center; display:flex; flex-direction:column; align-items:center; gap:28px;">
+      <p style="color:var(--blue-lt); font-size:15px; font-weight:700; letter-spacing:3px; text-transform:uppercase; margin:0;">La solución</p>
+      <h2 style="color:#fff; font-size:52px; font-weight:700; line-height:1.15; margin:0; max-width:780px; text-transform:uppercase;">Un solo sistema para <span style="color:var(--blue-lt);">todo</span> el taller</h2>
+      <p style="color:#C3C9D1; font-size:19px; line-height:1.5; margin:0; max-width:620px;">Clientes, vehículos, turnos, presupuestos, stock y facturación — conectados, en una sola pantalla.</p>
+    </div>
+  </div>
+
+  <!-- ============ MODULOS ============ -->
+  <div id="modulos" style="width:100%; background:#fff; box-sizing:border-box;">
+    <div class="container" style="padding:100px 40px;">
+      <p style="color:var(--blue-br); font-size:15px; font-weight:700; letter-spacing:3px; text-transform:uppercase; margin:0 0 14px;">Todo incluido</p>
+      <h2 style="font-size:44px; font-weight:700; margin:0 0 50px; max-width:680px; line-height:1.15;">14 módulos trabajando juntos</h2>
+      <div style="display:grid; grid-template-columns:repeat(5, minmax(0,1fr)); gap:16px;">
+
+        <div style="background:var(--bg); border-radius:6px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.4"/><path d="M3 20c0-3.3 2.7-5.7 6-5.7s6 2.4 6 5.7"/><circle cx="17.2" cy="8.5" r="2.5"/><path d="M15.5 14.6c2.5.4 4.5 2.4 4.5 5.4"/></svg>
+          <p style="font-size:15.5px; font-weight:600; margin:0;">Clientes</p>
+        </div>
+        <div style="background:var(--bg); border-radius:6px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.1L3 17.7l2.3 2.3 6.3-6.3a4 4 0 0 0 5.1-5.4l-2.7 2.7-2-2z"/></svg>
+          <p style="font-size:15.5px; font-weight:600; margin:0;">Vehículos</p>
+        </div>
+        <div style="background:var(--bg); border-radius:6px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13h4l2 7 4-14 2 7h6"/></svg>
+          <p style="font-size:15.5px; font-weight:600; margin:0;">Historia clínica</p>
+        </div>
+        <div style="background:var(--bg); border-radius:6px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="16" rx="1.5"/><path d="M3.5 9h17M8 3v3M16 3v3"/></svg>
+          <p style="font-size:15.5px; font-weight:600; margin:0;">Turnos y agenda</p>
+        </div>
+        <div style="background:var(--bg); border-radius:6px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 4 3 11l6.5 2.5L21 4z"/><path d="M9.5 13.5 21 4l-4.5 12-4-3.5z"/></svg>
+          <p style="font-size:15.5px; font-weight:600; margin:0;">Presupuestos</p>
+        </div>
+
+        <div style="background:var(--bg); border-radius:6px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.3 12.3 2.5 2.5 5-5.2"/></svg>
+          <p style="font-size:15.5px; font-weight:600; margin:0;">Órdenes de trabajo</p>
+        </div>
+        <div style="background:var(--bg); border-radius:6px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8 12 3.5 20.5 8 12 12.5z"/><path d="M3.5 8v9L12 21.5 20.5 17V8M12 12.5v9"/></svg>
+          <p style="font-size:15.5px; font-weight:600; margin:0;">Stock de repuestos</p>
+        </div>
+        <div style="background:var(--bg); border-radius:6px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 14.5 14.5 9.5"/><path d="M11 6.5 13 4.6a3.8 3.8 0 0 1 5.4 5.4L16.5 12"/><path d="M13 17.5l-2 1.9a3.8 3.8 0 0 1-5.4-5.4L7.5 12"/></svg>
+          <p style="font-size:15.5px; font-weight:600; margin:0;">Proveedores</p>
+        </div>
+        <div style="background:var(--bg); border-radius:6px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h12v17l-3-2-3 2-3-2-3 2z"/><path d="M9 8.5h6M9 12.5h6"/></svg>
+          <p style="font-size:15.5px; font-weight:600; margin:0;">Facturación y caja</p>
+        </div>
+        <div style="background:var(--bg); border-radius:6px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5c2.3-1 5.3-1 8 0v13c-2.7-1-5.7-1-8 0z"/><path d="M20 5.5c-2.3-1-5.3-1-8 0v13c2.7-1 5.7-1 8 0z"/></svg>
+          <p style="font-size:15.5px; font-weight:600; margin:0;">Gastos e ingresos</p>
+        </div>
+
+        <div style="background:var(--bg); border-radius:6px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V12M10 20V6M16 20v-9M4 20h16"/></svg>
+          <p style="font-size:15.5px; font-weight:600; margin:0;">Reportes y KPIs</p>
+        </div>
+        <div style="background:var(--black); border-radius:6px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-lt)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h16v11H9l-4 3.5v-3.5H4z"/></svg>
+          <p style="font-size:15.5px; font-weight:600; margin:0; color:#fff;">WhatsApp</p>
+        </div>
+        <div style="background:var(--bg); border-radius:6px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11v5c0 1.4 2.4 2.5 5.5 2.5s5.5-1.1 5.5-2.5v-5"/></svg>
+          <p style="font-size:15.5px; font-weight:600; margin:0;">Personal y mecánicos</p>
+        </div>
+        <div style="background:var(--bg); border-radius:6px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="9.5" rx="1.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>
+          <p style="font-size:15.5px; font-weight:600; margin:0;">Licencia y seguridad</p>
+        </div>
+        <div style="background:var(--bg); border-radius:6px; padding:22px; display:flex; flex-direction:column; gap:10px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="3.6"/><path d="M10.5 12.5 18 5"/><path d="M15.2 8 18 5l2.4 2.4-2.9 2.9"/></svg>
+          <p style="font-size:15.5px; font-weight:600; margin:0;">Señas y pagos parciales</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ HISTORIA CLINICA DIFERENCIAL ============ -->
+  <div style="width:100%; background:var(--black); box-sizing:border-box;">
+    <div class="container" style="padding:100px 40px; display:flex; gap:60px; align-items:center;">
+      <div style="flex:1; display:flex; flex-direction:column; gap:22px;">
+        <p style="color:var(--blue-lt); font-size:15px; font-weight:700; letter-spacing:3px; text-transform:uppercase; margin:0;">El gran diferencial</p>
+        <h2 style="color:#fff; font-size:38px; font-weight:700; margin:0; line-height:1.15; text-transform:uppercase;">Historia clínica del vehículo</h2>
+        <p style="color:#C3C9D1; font-size:17px; line-height:1.5; margin:0;">Cada reparación queda registrada con fecha, mecánico y detalle. Alertas automáticas de service por kilometraje. Exportable en PDF para el cliente.</p>
+        <div style="display:flex; gap:12px; align-items:center; margin-top:4px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue-lt)" stroke-width="2" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="9.5" rx="1.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg>
+          <p style="color:#8B909A; font-size:15px; margin:0;">Blinda al taller ante cualquier reclamo: todo queda documentado.</p>
+        </div>
+      </div>
+      <div style="flex:1.15; background:#fff; border-radius:8px; padding:14px;">
+        <img src="assets/historia-clinica.png" alt="Historia clínica del vehículo" style="width:100%; height:auto; display:block; border-radius:4px;">
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ CAPTURAS ============ -->
+  <div id="capturas" style="width:100%; background:var(--bg); box-sizing:border-box;">
+    <div class="container" style="padding:100px 40px;">
+      <p style="color:var(--blue-br); font-size:15px; font-weight:700; letter-spacing:3px; text-transform:uppercase; margin:0 0 14px;">El sistema en acción</p>
+      <h2 style="font-size:44px; font-weight:700; margin:0 0 50px; max-width:680px; line-height:1.15;">Así se ve trabajando en el taller</h2>
+      <div style="display:flex; flex-direction:column; gap:28px;">
+        <div style="background:#fff; border:1px solid var(--border); border-radius:8px; padding:16px;">
+          <img src="assets/dashboard.png" alt="Dashboard de Di Fiore Gestión" style="width:100%; height:auto; display:block; border-radius:4px;">
+          <p style="font-size:14.5px; color:var(--muted); margin:14px 4px 2px; text-align:center;">Dashboard — todo el taller de un vistazo</p>
+        </div>
+        <div style="display:flex; gap:28px;">
+          <div style="flex:1; background:#fff; border:1px solid var(--border); border-radius:8px; padding:16px;">
+            <img src="assets/ordenes.png" alt="Tablero de órdenes de trabajo" style="width:100%; height:auto; display:block; border-radius:4px;">
+            <p style="font-size:14.5px; color:var(--muted); margin:14px 4px 2px; text-align:center;">Órdenes de trabajo — tablero por estado</p>
+          </div>
+          <div style="flex:1; background:#fff; border:1px solid var(--border); border-radius:8px; padding:16px;">
+            <img src="assets/turnos.png" alt="Turnos y agenda" style="width:100%; height:auto; display:block; border-radius:4px;">
+            <p style="font-size:14.5px; color:var(--muted); margin:14px 4px 2px; text-align:center;">Turnos — con recordatorios por WhatsApp</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ BENEFICIOS ============ -->
+  <div style="width:100%; background:#fff; box-sizing:border-box;">
+    <div class="container" style="padding:100px 40px;">
+      <p style="color:var(--blue-br); font-size:15px; font-weight:700; letter-spacing:3px; text-transform:uppercase; margin:0 0 14px;">Beneficios</p>
+      <h2 style="font-size:44px; font-weight:700; margin:0 0 50px; max-width:680px; line-height:1.15;">Qué gana el taller que lo usa</h2>
+      <div style="display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:22px;">
+        <div class="card" style="display:flex; flex-direction:column; gap:14px;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 5 13.5h5.5L11 21l8-11h-5.5z"/></svg>
+          <h3 style="font-size:19px; font-weight:600; margin:0;">Menos tiempo perdido</h3>
+          <p style="font-size:15px; color:var(--muted); line-height:1.45; margin:0;">Toda la información a un clic, nada de buscar papeles.</p>
+        </div>
+        <div class="card" style="display:flex; flex-direction:column; gap:14px;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m8.3 12.3 2.5 2.5 5-5.2"/></svg>
+          <h3 style="font-size:19px; font-weight:600; margin:0;">Menos errores</h3>
+          <p style="font-size:15px; color:var(--muted); line-height:1.45; margin:0;">Presupuestos y órdenes claras, sin malentendidos.</p>
+        </div>
+        <div class="card" style="display:flex; flex-direction:column; gap:14px;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.4"/><path d="M3 20c0-3.3 2.7-5.7 6-5.7s6 2.4 6 5.7"/></svg>
+          <h3 style="font-size:19px; font-weight:600; margin:0;">Clientes que vuelven</h3>
+          <p style="font-size:15px; color:var(--muted); line-height:1.45; margin:0;">Recordatorios automáticos que generan visitas recurrentes.</p>
+        </div>
+        <div class="card" style="display:flex; flex-direction:column; gap:14px;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8 12 3.5 20.5 8 12 12.5z"/><path d="M3.5 8v9L12 21.5 20.5 17V8"/></svg>
+          <h3 style="font-size:19px; font-weight:600; margin:0;">Stock bajo control</h3>
+          <p style="font-size:15px; color:var(--muted); line-height:1.45; margin:0;">Alertas antes de que falte un repuesto en plena reparación.</p>
+        </div>
+        <div class="card" style="display:flex; flex-direction:column; gap:14px;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--blue-br)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V12M10 20V6M16 20v-9M4 20h16"/></svg>
+          <h3 style="font-size:19px; font-weight:600; margin:0;">Números claros</h3>
+          <p style="font-size:15px; color:var(--muted); line-height:1.45; margin:0;">Gastos, ingresos y ganancia real, mes a mes.</p>
+        </div>
+        <div style="background:var(--black); border-radius:6px; padding:32px; display:flex; flex-direction:column; gap:14px;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--blue-lt)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 20 6.5v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9v-5z"/><path d="m9 12 2 2 4-4"/></svg>
+          <h3 style="font-size:19px; font-weight:600; margin:0; color:#fff;">Taller más profesional</h3>
+          <p style="font-size:15px; color:#9BA1AA; line-height:1.45; margin:0;">Historia clínica y avisos automáticos cambian la percepción del cliente.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ PRECIO ============ -->
+  <div id="precio" style="width:100%; background:var(--black); box-sizing:border-box;">
+    <div class="container" style="padding:110px 40px; display:flex; flex-direction:column; align-items:center; gap:50px;">
+      <div style="text-align:center; display:flex; flex-direction:column; gap:14px; align-items:center;">
+        <p style="color:var(--blue-lt); font-size:15px; font-weight:700; letter-spacing:3px; text-transform:uppercase; margin:0;">Cómo funciona</p>
+        <h2 style="color:#fff; font-size:42px; font-weight:700; margin:0; text-transform:uppercase;">Licencia mensual, simple y sin sorpresas</h2>
+      </div>
+      <div style="background:var(--black2); border:1px solid var(--black3); border-radius:10px; padding:56px; display:flex; flex-direction:column; align-items:center; gap:24px; max-width:520px; width:100%; box-sizing:border-box;">
+        <p style="color:var(--blue-lt); font-size:18px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin:0;">Licencia Di Fiore Gestión</p>
+        <div style="display:flex; align-items:baseline; gap:8px;">
+          <p class="cond" style="color:#fff; font-size:72px; font-weight:700; margin:0; line-height:1;">$ 50.000</p>
+        </div>
+        <p style="color:#9BA1AA; font-size:16px; margin:0;">por mes, por taller</p>
+        <div style="width:100%; height:1px; background:var(--black3); margin:8px 0;"></div>
+        <div style="display:flex; flex-direction:column; gap:14px; width:100%;">
+          <div style="display:flex; gap:12px; align-items:flex-start;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue-lt)" stroke-width="2" stroke-linecap="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg><p style="color:#D5D9DE; font-size:15.5px; margin:0;">Los 14 módulos incluidos, sin versiones recortadas</p></div>
+          <div style="display:flex; gap:12px; align-items:flex-start;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue-lt)" stroke-width="2" stroke-linecap="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg><p style="color:#D5D9DE; font-size:15.5px; margin:0;">Actualizaciones automáticas sin costo adicional</p></div>
+          <div style="display:flex; gap:12px; align-items:flex-start;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue-lt)" stroke-width="2" stroke-linecap="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg><p style="color:#D5D9DE; font-size:15.5px; margin:0;">Instalación y capacitación inicial incluidas</p></div>
+          <div style="display:flex; gap:12px; align-items:flex-start;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue-lt)" stroke-width="2" stroke-linecap="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg><p style="color:#D5D9DE; font-size:15.5px; margin:0;">Soporte directo por WhatsApp</p></div>
+          <div style="display:flex; gap:12px; align-items:flex-start;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue-lt)" stroke-width="2" stroke-linecap="round"><path d="m5 12.5 4.5 4.5L19 7"/></svg><p style="color:#D5D9DE; font-size:15.5px; margin:0;">Sin permanencia forzosa: se paga mes a mes</p></div>
+        </div>
+        <a class="btn-primary" style="width:100%; text-align:center; margin-top:10px; box-sizing:border-box;" href="mailto:delpa555@gmail.com?subject=Quiero%20contratar%20Di%20Fiore%20Gesti%C3%B3n">Empezar ahora</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FAQ ============ -->
+  <div id="faq" style="width:100%; background:#fff; box-sizing:border-box;">
+    <div class="container" style="padding:100px 40px; max-width:820px;">
+      <p style="color:var(--blue-br); font-size:15px; font-weight:700; letter-spacing:3px; text-transform:uppercase; margin:0 0 14px;">Preguntas frecuentes</p>
+      <h2 style="font-size:40px; font-weight:700; margin:0 0 44px; line-height:1.15;">Antes de escribirnos</h2>
+      <div style="display:flex; flex-direction:column;">
+        <div style="padding:26px 0; border-bottom:1px solid var(--border);">
+          <h3 style="font-size:18.5px; font-weight:600; margin:0 0 8px;">¿Necesito internet para usar el sistema todos los días?</h3>
+          <p style="font-size:15.5px; color:var(--muted); line-height:1.5; margin:0;">No. El sistema funciona en la computadora del taller. Solo hace falta conexión para el envío de mensajes de WhatsApp.</p>
+        </div>
+        <div style="padding:26px 0; border-bottom:1px solid var(--border);">
+          <h3 style="font-size:18.5px; font-weight:600; margin:0 0 8px;">¿Cómo evito que un mecánico vea la facturación?</h3>
+          <p style="font-size:15.5px; color:var(--muted); line-height:1.5; margin:0;">Es automático: cada rol (dueño, recepción, mecánico, cajero) ve solo lo que le corresponde, sin configuración extra.</p>
+        </div>
+        <div style="padding:26px 0; border-bottom:1px solid var(--border);">
+          <h3 style="font-size:18.5px; font-weight:600; margin:0 0 8px;">¿Qué pasa si se rompe o se pierde la computadora?</h3>
+          <p style="font-size:15.5px; color:var(--muted); line-height:1.5; margin:0;">El sistema hace copias de seguridad automáticas locales. Ante la pérdida del equipo, te ayudamos a reactivar la licencia en el nuevo.</p>
+        </div>
+        <div style="padding:26px 0; border-bottom:1px solid var(--border);">
+          <h3 style="font-size:18.5px; font-weight:600; margin:0 0 8px;">¿Cuánto tarda la instalación?</h3>
+          <p style="font-size:15.5px; color:var(--muted); line-height:1.5; margin:0;">Minutos. Instalás el programa, activás la licencia y podés cargar tus primeros clientes y vehículos ese mismo día.</p>
+        </div>
+        <div style="padding:26px 0;">
+          <h3 style="font-size:18.5px; font-weight:600; margin:0 0 8px;">¿Hay permanencia mínima?</h3>
+          <p style="font-size:15.5px; color:var(--muted); line-height:1.5; margin:0;">No. La licencia se paga mes a mes, sin contrato de permanencia forzosa.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ CTA DEMO ============ -->
+  <div style="width:100%; background:var(--blue-br); box-sizing:border-box;">
+    <div class="container" style="padding:80px 40px; text-align:center; display:flex; flex-direction:column; align-items:center; gap:24px;">
+      <h2 style="color:#fff; font-size:36px; font-weight:700; margin:0; text-transform:uppercase;">Probalo gratis en tu taller</h2>
+      <p style="color:#DCEBFF; font-size:17px; margin:0; max-width:520px;">Pedí la demo y en minutos la tenés instalada en la computadora del taller.</p>
+      <a href="https://github.com/DELPA555/difiore-releases/releases/download/v0.1.6/DiFiore-Gestion-Setup.exe" style="background:var(--black); color:#fff; padding:17px 34px; border-radius:4px; font-weight:600; font-size:17px;">Descargar demo</a>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <div style="width:100%; background:var(--black); box-sizing:border-box;">
+    <div class="container" style="padding:56px 40px 40px; display:flex; flex-direction:column; gap:36px;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:30px;">
+        <img src="assets/logo.png" alt="Di Fiore Performance" style="height:32px; width:auto;">
+        <div style="display:flex; gap:50px; flex-wrap:wrap;">
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <p style="color:#8B909A; font-size:13px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; margin:0 0 4px;">Producto</p>
+            <a class="navlink" href="#problema">El problema</a>
+            <a class="navlink" href="#modulos">Módulos</a>
+            <a class="navlink" href="#precio">Precio</a>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <p style="color:#8B909A; font-size:13px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; margin:0 0 4px;">Contacto</p>
+            <a class="navlink" href="mailto:delpa555@gmail.com">delpa555@gmail.com</a>
+            <p class="navlink" style="margin:0;">Mar del Plata, Argentina</p>
+          </div>
+        </div>
+      </div>
+      <div style="height:1px; background:var(--black3);"></div>
+      <p style="color:#6B7078; font-size:13.5px; margin:0;">Di Fiore Gestión — un producto de Pétalo Rosa Tecnología × Di Fiore Performance.</p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
